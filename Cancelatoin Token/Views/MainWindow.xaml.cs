@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cancelatoin_Token.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Cancelatoin_Token
 		public MainWindow()
 		{
 			InitializeComponent();
+			this.DataContext = new MainWindowViewModel(this);
 		}
 	}
 }
